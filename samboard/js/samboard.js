@@ -51,7 +51,8 @@ $(document).ready(function(){
             playListInit(false); // Parameter is a boolean for autoplay.
         },
         oggSupport: false,
-        swfPath: "/samboard/js"
+        swfPath: "/samboard/js",
+        volume: 1
     })
     .jPlayer("onProgressChange", function(loadPercent, playedPercentRelative, playedPercentAbsolute, playedTime, totalTime) {
         jpPlayTime.text($.jPlayer.convertTime(playedTime));
