@@ -52,7 +52,7 @@ $(document).ready(function(){
         },
         oggSupport: false,
         swfPath: "/samboard/js",
-        volume: 1
+        volume: 100
     })
     .jPlayer("onProgressChange", function(loadPercent, playedPercentRelative, playedPercentAbsolute, playedTime, totalTime) {
         jpPlayTime.text($.jPlayer.convertTime(playedTime));
